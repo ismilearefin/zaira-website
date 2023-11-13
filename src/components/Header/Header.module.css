@@ -1,0 +1,322 @@
+.topHeaderArea{
+    background-color: #183354;
+    color: white;
+    padding: 16px 0px;
+}
+.hamburger{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 28px;
+}
+.socialMediaIcons{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.socialMediaIcons > a{
+    text-decoration: none;
+    color: white;
+}
+.socialMediaIcons > a:hover{
+    text-decoration: none;
+    color: #f4796c;
+    transition: color 0.3s ease;
+}
+
+.socialMediaIconsMobile{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 18px;
+}
+.socialMediaIconsMobile > a{
+    padding: 12px;
+    border: 1px solid #d9d9d9;
+    text-decoration: none;
+    color: #183354;
+}
+
+
+.searchBox{
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    height: auto;
+    padding: 0 45px 0 0;
+}
+.searchButton{
+    font-size: 24px;
+    color: white;
+    background-color: transparent;
+    border: 0;
+}
+.bottomHeaderArea{
+    border-bottom: 1px solid #dfdfdf;
+}
+.menuItems > a{
+    color:#183354;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 40px 17px;
+    line-height: 1;
+}
+.menuItems > div{
+    color:#183354;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 40px 17px;
+    line-height: 1;
+}
+.menuItems >  a:hover{
+    color: #f4796c;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.menuItems >  div:hover{
+    color: #f4796c;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.menuItems{
+    align-items: center;
+}
+
+.dropDown{
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+    /* border: 1px solid #000; */
+    min-width: 180px;
+    padding: 15px 10px;
+    background-color: White;
+    border-radius: 5px;
+    
+    z-index: 9;
+    box-shadow: 0px 30px 70px 0px rgba(137, 139, 142, 0.15);
+    -webkit-animation: slide-top 0.5s ease-in reverse both;
+	        animation: slide-top 0.5s ease-in reverse both;
+}
+.ResponsiveDropDown{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: White;
+   
+}
+.dropDown > a{
+    color:#183354;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 5px;
+    line-height: 1.3;
+    text-decoration: none;
+}
+.dropDown > a:hover{
+    color: #f4796c;
+    border-left: 3px solid #f4796c;
+    transition: color 0.3s ease;
+}
+
+.mobileHamburger{
+    color:#f4796c;
+    font-size: 30px;
+}
+
+.mobileDrawer{
+    background-color: #fff;
+    position: fixed;
+    min-height: 100vh;
+    width: 300px;
+    top: 0;
+    right: 0;
+    max-width: 100%;
+    z-index: 99;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+.menuBackDrop{
+    position:fixed;
+}
+.menuBackDropVisibal{
+    position:fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #00000080;
+    opacity: 1;
+    visibility: visible;
+}
+
+.drawerClose{
+    font-size: 30px;
+}
+
+.mobileSearch{
+    position: relative;
+}
+.mobileSearch > input{
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    padding: 10px 45px 10px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    height: 45px;
+    background-color: transparent;
+    color: #183354;
+}
+.mobileSearch > button{
+    position: absolute;
+    top: 20%;
+    font-size: 22px;
+    border: none;
+    padding: 0;
+    right: 20px;
+    line-height: 1;
+    background-color: transparent;
+    color: #183354;
+}
+.drawerButton{
+    position: relative;
+    width: 100%;
+    padding: 5px 0;
+    
+    border-bottom: 1px solid #d9d9d9;
+    
+    text-decoration: none;
+    color: #183354
+}
+
+.drawerButton > div > p {
+    margin: 0;
+}
+.drawerButton > a {
+    padding: 32px 0;
+
+}
+.dropDownIcon{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    line-height: 32px;
+    cursor: pointer;
+    background-color: #f4796c;
+    color: white;
+}
+.responsiveDropdownButton{
+    text-decoration: none;
+    color: #183354;
+    padding: 14px 20px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.DestopDrawer{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 395px;
+    padding: 80px 58px 75px;
+    height: 100%;
+    background-color:#ffffff;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.06) 16px 0px 32px 0px;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.mobileDrawerCloseIcon{
+    margin-top: -50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #f4796c;
+    cursor: pointer;
+    font-size: 24px;
+}
+.DestopDrawer > p{
+    color: #545e69;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+.DestopDrawer > h4{
+    color: #183354;
+    margin: 0 0 28px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    
+}
+.drawerGallery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 55px;
+}
+.contactIcons{
+    color: #6d757f;
+    margin-right: 15px;
+}
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(-90);
+              transform: translateY(-90);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(-90);
+              transform: translateY(-90);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+
+  @keyframes slide-left {
+    0% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      transform: translateX(-100px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
