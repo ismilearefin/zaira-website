@@ -6,7 +6,7 @@ import { RxCountdownTimer } from 'react-icons/rx';
 import styles from './HeroSection.module.css'
 import Image from 'next/legacy/image';
 import Link from 'next/link';
-import HeroCard from '../HeroCard/HeroCard';
+import HeroCard from './HeroCard/HeroCard';
 
 export default function HeroSection() {
     const [blogs, setBlogsData] = useState([]);
@@ -29,7 +29,9 @@ export default function HeroSection() {
               {
                 blogs.slice(0,1).map(blog =>(
                   <div key={blog.id} className='position-relative'>
-                    <div className={`position-relative ${styles.bannerPostThumb}`} onMouseOver={()=>setHoverEffect(true)} onMouseLeave={()=>setHoverEffect(false)}>
+                    <div className={`position-relative ${styles.bannerPostThumb}`} 
+                    onMouseOver={()=>setHoverEffect(true)} 
+                    onMouseLeave={()=>setHoverEffect(false)}>
                       <div className={`position-relative ${styles.mainImg} overflow-hidden`}>
                         <Image src={blog.img} alt='img' layout='fill' className={styles.bannerImg} />
                         <div className={`overlay position-absolute w-100 h-100 ${styles.overlay}`} />
@@ -37,7 +39,7 @@ export default function HeroSection() {
                       <div className={`${styles.bannerPostContent} position-absolute `}>
                         <Link href={'/'}>{blog.category}</Link>
                         <h4 className={`${hoverEffect ? styles.hoverEffect : styles.initialState}`}>{blog.title}</h4>
-                        <div className={`${styles.infoDiv} d-flex align-items-center justify-content-start`}>
+                        <div className={`${styles.infoDiv} d-flex align-items-center justify-content-start flex-wrap`}>
                           <Link href='/' className={`${styles.info} d-flex align-items-center text-decoration-none`}>
                             <PiUserCircleLight className='fs-5'/>
                             <span >BY {blog.author}</span>
