@@ -11,7 +11,6 @@ import CustomizeBorder from '../CustomizeBorder/CustomizeBorder';
 
 export default function EditorChoice() {
     const [blogs, setBlogsData] = useState([]);
-    // const [hoverEffect , setHoverEffect] = useState(false);
     const SliderRef = useRef(null);
 
   useEffect(() => {
@@ -61,7 +60,6 @@ export default function EditorChoice() {
                     <button className={styles.arrowButton} onClick={()=>SliderRef.current.slickNext()}><FaArrowRight /></button>
                 </div>
                 <CustomizeBorder></CustomizeBorder>
-                {/* <div className={styles.sectionTitleLine}></div> */}
             </div>
             <div className='row'>
                 <Slider {...settings} ref={SliderRef}>

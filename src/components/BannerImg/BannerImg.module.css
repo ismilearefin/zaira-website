@@ -1,0 +1,73 @@
+.mainImg {
+    position: relative;
+    width: 100%;
+    /* height: 615px; */
+    color: #f4796c;
+    transition: all 0.3s ease-out 0s;
+  }
+  .bannerImg {
+    position: relative;
+    object-fit:cover;
+  }
+  
+  .bannerPostThumb {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .overlay {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.89) 16.31%,
+      rgba(10, 23, 41, 0) 108.6%
+    );
+    pointer-events: none;
+  }
+  
+  .mainImg:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out 0s;
+  }
+  .initialState {
+    text-decoration: none;
+  }
+  .hoverEffect {
+    text-decoration: underline;
+  }
+  .bannerPostContent {
+    width: 90%;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    right: 50px;
+  }
+  .bannerPostContent > a {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    background: #f4796c;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 4px 10px;
+    margin-bottom: 15px;
+    text-decoration: none;
+  }
+  .bannerPostContent > h4 {
+    color: white;
+    font-size: clamp(18px, 10vw, 28px);
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  .info{
+      color:#BACCE1;
+      font-size: clamp(10px, 10vw, 14px);
+      gap: 5px;
+      text-transform: uppercase;
+      font-weight: 700;
+  }
+  .infoDiv{
+      gap:10px;
+  }
