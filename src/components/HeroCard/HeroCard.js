@@ -1,14 +1,12 @@
 import Image from 'next/legacy/image';
 import styles from './HeroCard.module.css';
 import Link from 'next/link';
-import { PiUserCircleLight } from 'react-icons/pi';
+
 import { AiOutlineCalendar } from 'react-icons/ai';
-import { RxCountdownTimer } from 'react-icons/rx';
+
 import { useState } from 'react';
 
 export default function HeroCard({blog}) {
-    // const {img, category, title,date} = blog;
-    // console.log(img, category, title, author,min,date)
     const [hoverEffect , setHoverEffect] = useState(false);
     
   return (
