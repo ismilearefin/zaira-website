@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import AdBannerArea from "@/components/AdBannerArea/AdBannerArea";
 import EditorChoice from "@/components/EditorChoice/EditorChoice";
 import RecentPosts from "@/components/RecentPosts/RecentPosts";
+import TrendingNews from "@/components/TrendingNews/TrendingNews";
 
 
 
@@ -18,6 +19,7 @@ export default function Home() {
         <div className="row">
           <div className="col-12 col-lg-8">
             <RecentPosts />
+            <TrendingNews />
           </div>
           <div className="col-12 col-lg-4">2</div>
         </div>

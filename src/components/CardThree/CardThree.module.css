@@ -1,12 +1,19 @@
-.mainImg {
+.heroSection {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .mainImg {
     position: relative;
     width: 100%;
+    height: 200px;
     color: #f4796c;
     transition: all 0.3s ease-out 0s;
   }
-  .bannerImg {
+  .imageCard {
     position: relative;
     object-fit:cover;
+    width: 100%;
+    
   }
   
   .bannerPostThumb {
@@ -33,15 +40,12 @@
   .hoverEffect {
     text-decoration: underline;
   }
-  .bannerPostContent {
-    width: 85%;
+  
+  .CardButton {
     position: absolute;
-    left: 40px;
-    bottom: 40px;
-    right: 50px;
-  }
-  .bannerPostContent > a {
-    color: white;
+    top: 10px;
+    left: 10px;
+    color: #ffffff;
     font-size: 13px;
     font-weight: 600;
     line-height: normal;
@@ -54,15 +58,15 @@
     text-decoration: none;
   }
   .bannerPostContent > h4 {
-    color: white;
-    font-size: clamp(18px, 10vw, 28px);
+    color: rgb(0, 0, 0);
+    font-size: clamp(12px, 10vw, 18px);
     font-weight: 600;
-    line-height: 1.4;
-    margin-bottom: 15px;
+    line-height: 1.3;
+    /* margin-bottom: 15px; */
   }
   .info{
-      color:#BACCE1;
-      font-size: clamp(10px, 10vw, 14px);
+      color:#6D757F;
+      font-size: clamp(10px, 10vw, 10px);
       gap: 5px;
       text-transform: uppercase;
       font-weight: 700;
