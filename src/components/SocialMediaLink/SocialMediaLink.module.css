@@ -1,0 +1,22 @@
+.SocialMediaLink{
+    display: flex;
+    align-items: center;
+    background-color: #E8F1F1;
+    color: #183354;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+    gap: 10px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 4px 4px;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.SocialMediaLink:hover{
+    background-color: #F4796C;
+    color: white;
+    transition: all 0.3s ease-out 0s;
+}

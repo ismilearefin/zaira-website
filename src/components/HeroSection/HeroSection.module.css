@@ -8,7 +8,7 @@
   width: 100%;
   height: 615px;
   color: #f4796c;
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
 }
 .bannerImg {
   position: relative;

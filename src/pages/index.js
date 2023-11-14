@@ -5,6 +5,9 @@ import AdBannerArea from "@/components/AdBannerArea/AdBannerArea";
 import EditorChoice from "@/components/EditorChoice/EditorChoice";
 import RecentPosts from "@/components/RecentPosts/RecentPosts";
 import TrendingNews from "@/components/TrendingNews/TrendingNews";
+import advertisement3 from '../assets/advertisement03.jpg';
+import Image from "next/image";
+import Subscribe from "@/components/Subscribe/Subscribe";
 
 
 
@@ -21,8 +24,18 @@ export default function Home() {
             <RecentPosts />
             <TrendingNews />
           </div>
-          <div className="col-12 col-lg-4">2</div>
+          <aside className="col-12 col-lg-4">
+              <Subscribe />
+          </aside>
         </div>
+      </div>
+      {/* advertisement section */}
+      <div className="container">
+          <Image src={advertisement3} alt="advertisement3" width={1290} height={200} className="img-fluid"/>
+      </div>
+      {/* carousel section */}
+      <div className="border">
+        Carosol
       </div>
     </div>
   )
