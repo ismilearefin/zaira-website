@@ -8,6 +8,7 @@ import TrendingNews from "@/components/TrendingNews/TrendingNews";
 import advertisement3 from '../assets/advertisement03.jpg';
 import Image from "next/image";
 import Subscribe from "@/components/Subscribe/Subscribe";
+import HotCategories from "@/components/HotCategories/HotCategories";
 
 
 
@@ -26,6 +27,7 @@ export default function Home() {
           </div>
           <aside className="col-12 col-lg-4">
               <Subscribe />
+              <HotCategories/>
           </aside>
         </div>
       </div>

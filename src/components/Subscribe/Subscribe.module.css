@@ -1,6 +1,7 @@
 
 .SubscribeSection{
     position: relative;
+    margin-bottom: 80px;
 }
 .SubscribeSection > h4{
     font-size: 22px;
@@ -15,7 +16,7 @@
     background-color: #183354;
     border-radius: 5px;
     text-align: center;
-    padding: 50px 35px 30px;
+    padding: 50px 35px 50px;
     position: relative;
     z-index: 1;
 }
