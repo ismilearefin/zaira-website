@@ -1,0 +1,78 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/zQDsKnF/blogImg1.jpg",
+      "category": "Technology",
+      "title": "Game Changing Virtual Reality Console Technololows Profit To Serve The Community",
+      "author": "John Doe",
+      "date": "27 AUGUST, 2024",
+      "min": 120
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/9wp6YB0/blogImg2.jpg",
+      "category": "Gadget",
+      "title": "New Modern Iphone 14pro Max Extrea Revolutionary Features",
+      "author": "Jane Smith",
+      "date": "27 AUGUST, 2024",
+      "min": 150
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/Ky2tR0d/blogImg5.jpg",
+      "category": "Mobile",
+      "title": "A Guide To Image Optimization On Jamstack Sites",
+      "author": "Robert Johnson",
+      "date": "27 AUGUST, 2024",
+      "min": 90
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/zQDsKnF/blogImg1.jpg",
+      "category": "Technology",
+      "title": "Using Automated Test Results To Improve Accessibility",
+      "author": "Emily White",
+      "date": "27 AUGUST, 2024",
+      "min": 180
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/9wp6YB0/blogImg2.jpg",
+      "category": "Gadget",
+      "title": "Using Automated Test Results To Improve",
+      "author": "David Brown",
+      "date": "27 AUGUST, 2024",
+      "min": 135
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/LJX9606/blogImg4.jpg",
+      "category": "Mobile",
+      "title": "How To Search For A Developer Job Abroad",
+      "author": "Sophia Taylor",
+      "date": "27 AUGUST, 2024",
+      "min": 110
+    },
+    {
+      "id": 7,
+      "img": "https://i.ibb.co/Ky2tR0d/blogImg5.jpg",
+      "category": "News",
+      "title": "New Smashing Front-End & UX Workshops",
+      "author": "Michael Johnson",
+      "date": "27 AUGUST, 2024",
+      "min": 140
+    },
+    {
+      "id": 8,
+      "img": "https://i.ibb.co/6swCc4x/blogImg6.jpg",
+      "category": "Gadget",
+      "title": "World Needs to Better Reflect People of Color",
+      "author": "Alex Turner",
+      "date": "27 AUGUST, 2024",
+      "min": 160
+    }
+  ]
+
+  
+
+  

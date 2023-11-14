@@ -18,7 +18,7 @@ import { useState } from "react";
 export default function Header() {
   const [dropDown, setDropDown] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
-  console.log(dropDown);
+  // console.log(dropDown);
   return (
     <header>
       <div className={`${styles.topHeaderArea} d-none d-lg-block`}>
