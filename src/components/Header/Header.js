@@ -13,11 +13,26 @@ import drawerpng from "../../assets/drawerPng.jpg";
 import styles from "./Header.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [dropDown, setDropDown] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [sticky, setSticky] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   // console.log(dropDown);
   return (
     <header>
@@ -159,7 +174,8 @@ export default function Header() {
         </div>
       </div>
       {/* bottom header area Start */}
-      <div className={styles.bottomHeaderArea}>
+      {/*  */}
+      <div className={`${styles.bottomHeaderArea} ${sticky ? styles.isSticky : ""}`}>
         <div className="container d-flex align-items-center justify-content-between">
           <Link href="/">
             <Image src={logo} alt="logo" width={180} height={50} />
@@ -423,13 +439,13 @@ export default function Header() {
             )}
           </div>
 
+        </div>
+      </div>
           <div
             className={`${
               isOpen ? styles.menuBackDropVisibal : styles.menuBackDrop
             }`}
           ></div>
-        </div>
-      </div>
     </header>
   );
 }
