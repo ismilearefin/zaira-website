@@ -282,7 +282,6 @@
 .isSticky {
   position: fixed;
   top: 0;
-  padding: 10px 0;
   width: 100%;
   z-index: 80;
   background-color: white;
