@@ -1,5 +1,5 @@
 import { GiHamburgerMenu } from "react-icons/gi";
-import { MdClose,MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
+import { MdClose, MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import {
   FaFacebookF,
   FaInstagram,
@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import { BiSearch, BiChevronDown } from "react-icons/bi";
 import logo from "../../assets/logoBlog.png";
-import drawerpng from '../../assets/drawerPng.jpg';
+import drawerpng from "../../assets/drawerPng.jpg";
 import styles from "./Header.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,44 +24,109 @@ export default function Header() {
       <div className={`${styles.topHeaderArea} d-none d-lg-block`}>
         <div className="container">
           {/* Destop drawer */}
-          {
-            isOpen && (
-              <div className={`${styles.DestopDrawer} d-none d-lg-block`}>
-                <div className="d-flex justify-content-end ">
-                  <div className={`${styles.mobileDrawerCloseIcon}`} onClick={() => setIsOpen(false)}><MdClose/></div>
+          {isOpen && (
+            <div className={`${styles.DestopDrawer} d-none d-lg-block`}>
+              <div className="d-flex justify-content-end ">
+                <div
+                  className={`${styles.mobileDrawerCloseIcon}`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  <MdClose />
                 </div>
-                <Image src={logo} alt="logo" width={170} height={50} className="mb-4"/>
-                <p className="mb-4">The argument in favor of using filler text goes something like this: If you use any real content in the Consulting Process anytime you reach.</p>
-                <div className={styles.drawerGallery}>
-                  <Image className="rounded" src={drawerpng} alt="png" width={85} height={70}/>
-                  <Image className="rounded" src={drawerpng} alt="png" width={85} height={70}/>
-                  <Image className="rounded" src={drawerpng} alt="png" width={85} height={70}/>
-                  <Image className="rounded" src={drawerpng} alt="png" width={85} height={70}/>
-                  <Image className="rounded" src={drawerpng} alt="png" width={85} height={70}/>
-                  <Image className="rounded" src={drawerpng} alt="png" width={85} height={70}/>
-                </div>
-                <h4>Get In Touch</h4>
-                <div>
-                  <div className="d-flex align-items-center mb-2">
-                  <MdEmail className={styles.contactIcons}/> 
-                  <a href="mailto:info@webmail.com" className="text-decoration-none text-muted">info@webmail.com</a>
-                    </div>
-                  <div className="d-flex align-items-center mb-2">
-                  <MdPhone className={styles.contactIcons}/> 
-                  <a href="tel:88899988877" className="text-decoration-none text-muted">888 999 888 77</a>
-                    </div>
-                  <div className="d-flex align-items-center mb-2">
-                  <MdLocationOn className={styles.contactIcons}/> 
-                  <a href="#" className="text-decoration-none text-muted"> 12/A, New Booston, NYC</a>
-                    </div>
-                  </div>
               </div>
-            )
-          }
+              <Image
+                src={logo}
+                alt="logo"
+                width={170}
+                height={50}
+                className="mb-4"
+              />
+              <p className="mb-4">
+                The argument in favor of using filler text goes something like
+                this: If you use any real content in the Consulting Process
+                anytime you reach.
+              </p>
+              <div className={styles.drawerGallery}>
+                <Image
+                  className="rounded"
+                  src={drawerpng}
+                  alt="png"
+                  width={85}
+                  height={70}
+                />
+                <Image
+                  className="rounded"
+                  src={drawerpng}
+                  alt="png"
+                  width={85}
+                  height={70}
+                />
+                <Image
+                  className="rounded"
+                  src={drawerpng}
+                  alt="png"
+                  width={85}
+                  height={70}
+                />
+                <Image
+                  className="rounded"
+                  src={drawerpng}
+                  alt="png"
+                  width={85}
+                  height={70}
+                />
+                <Image
+                  className="rounded"
+                  src={drawerpng}
+                  alt="png"
+                  width={85}
+                  height={70}
+                />
+                <Image
+                  className="rounded"
+                  src={drawerpng}
+                  alt="png"
+                  width={85}
+                  height={70}
+                />
+              </div>
+              <h4>Get In Touch</h4>
+              <div>
+                <div className="d-flex align-items-center mb-2">
+                  <MdEmail className={styles.contactIcons} />
+                  <a
+                    href="mailto:info@webmail.com"
+                    className="text-decoration-none text-muted"
+                  >
+                    info@webmail.com
+                  </a>
+                </div>
+                <div className="d-flex align-items-center mb-2">
+                  <MdPhone className={styles.contactIcons} />
+                  <a
+                    href="tel:88899988877"
+                    className="text-decoration-none text-muted"
+                  >
+                    888 999 888 77
+                  </a>
+                </div>
+                <div className="d-flex align-items-center mb-2">
+                  <MdLocationOn className={styles.contactIcons} />
+                  <a href="#" className="text-decoration-none text-muted">
+                    {" "}
+                    12/A, New Booston, NYC
+                  </a>
+                </div>
+              </div>
+            </div>
+          )}
           {/* Top header area */}
           <div className="d-flex align-items-center justify-content-between px-2">
             <div className="d-flex align-items-center">
-              <div className={`${styles.hamburger} me-3`} onClick={() => setIsOpen(true)}>
+              <div
+                className={`${styles.hamburger} me-3`}
+                onClick={() => setIsOpen(true)}
+              >
                 <GiHamburgerMenu />
               </div>
               <div className={styles.socialMediaIcons}>
@@ -96,7 +161,9 @@ export default function Header() {
       {/* bottom header area Start */}
       <div className={styles.bottomHeaderArea}>
         <div className="container d-flex align-items-center justify-content-between">
-          <Link href='/'><Image src={logo} alt="logo" width={180} height={50} /></Link>
+          <Link href="/">
+            <Image src={logo} alt="logo" width={180} height={50} />
+          </Link>
           {/* Destop menu bar */}
           <div className={`${styles.menuItems} d-none d-lg-flex`}>
             <div

@@ -1,16 +1,13 @@
-.titleArea{
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.titleArea {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.titleArea > h4{
-    
-        font-size: 28px;
-        color: #183354;
-        margin-bottom: 0;
-        font-weight: 700;
-        line-height: 1.2;
-        
-    
+.titleArea > h4 {
+  font-size: 28px;
+  color: #183354;
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 1.2;
 }

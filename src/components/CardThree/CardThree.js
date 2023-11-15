@@ -20,7 +20,6 @@ export default function CardThree({ blog }) {
             alt="img"
             width={276}
             height={200}
-            // layout="fill"
             className={styles.imageCard}
           />
 

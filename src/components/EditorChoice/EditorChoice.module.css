@@ -1,33 +1,31 @@
-.EditorChoiceSection{
-    padding-top: 50px;
-    
+.EditorChoiceSection {
+  padding-top: 50px;
 }
 
-.title{
-    font-size: 28px;
-    color: #183354;
-    margin-bottom: 0;
-    font-weight: 700;
-    line-height: 1.2;
+.title {
+  font-size: 28px;
+  color: #183354;
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 1.2;
 }
-.arrowButton{
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    border-radius: 4px;
-    padding: 0;
-    font-size: 14px;
-    color: #F4796C;
-    border: 1px solid #cfcfcf;
+.arrowButton {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 4px;
+  padding: 0;
+  font-size: 14px;
+  color: #f4796c;
+  border: 1px solid #cfcfcf;
 }
-.arrowButton:hover{
-    
-    background:#F4796C;
-    
-    color:#fff;
-    
-    transition: all 0.3s ease-out 0s;
+.arrowButton:hover {
+  background: #f4796c;
+
+  color: #fff;
+
+  transition: all 0.3s ease-out 0s;
 }

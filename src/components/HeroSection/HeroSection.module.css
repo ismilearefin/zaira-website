@@ -12,7 +12,7 @@
 }
 .bannerImg {
   position: relative;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .bannerPostThumb {
@@ -66,28 +66,28 @@
   line-height: 1.4;
   margin-bottom: 15px;
 }
-.info{
-    color:#BACCE1;
-    font-size: clamp(10px, 10vw, 14px);
-    gap: 5px;
-    text-transform: uppercase;
-    font-weight: 700;
+.info {
+  color: #bacce1;
+  font-size: clamp(10px, 10vw, 14px);
+  gap: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
-.infoDiv{
-    gap:10px;
+.infoDiv {
+  gap: 10px;
 }
 
-.cardSection{
+.cardSection {
   gap: 18px;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   margin: auto;
   padding: 0;
 }
 
 @media screen and (max-width: 991px) {
-  .bannerSection{
-    padding:0;
-    gap:18px;
+  .bannerSection {
+    padding: 0;
+    gap: 18px;
   }
 }

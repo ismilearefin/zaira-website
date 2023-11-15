@@ -1,15 +1,13 @@
-import { useEffect, useRef, useState } from 'react';
-import styles from './EditorChoice.module.css';
-import { FaArrowRight,FaArrowLeft } from "react-icons/fa";
-import SmallCard from '../SmallCard/SmallCard';
+import { useEffect, useRef, useState } from "react";
+import styles from "./EditorChoice.module.css";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import SmallCard from "../SmallCard/SmallCard";
 import Slider from "react-slick";
-
-import CustomizeBorder from '../CustomizeBorder/CustomizeBorder';
-
+import CustomizeBorder from "../CustomizeBorder/CustomizeBorder";
 
 export default function EditorChoice() {
-    const [blogs, setBlogsData] = useState([]);
-    const SliderRef = useRef(null);
+  const [blogs, setBlogsData] = useState([]);
+  const SliderRef = useRef(null);
 
   useEffect(() => {
     const blogData = async () => {
@@ -20,10 +18,9 @@ export default function EditorChoice() {
     blogData();
   }, []);
 
-  const editorChoiceBlog = blogs.slice(1,blogs.length);
+  const editorChoiceBlog = blogs.slice(1, blogs.length);
 
   const settings = {
-    
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -34,39 +31,48 @@ export default function EditorChoice() {
         settings: {
           slidesToShow: 2,
           infinite: true,
-          
-        }
+        },
       },
       {
         breakpoint: 770,
         settings: {
-            infinite: true,
+          infinite: true,
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div className={styles.EditorChoiceSection}>
-        <div className='container'>
-            <div className='d-flex align-items-center justify-content-between position-relative mb-5'>
-                <h4 className={styles.title}>Editors Choice</h4>
-                <div className='d-none d-md-flex align-items-center justify-content-center'>
-                    <button className={`${styles.arrowButton} me-1`} onClick={()=>SliderRef.current.slickPrev()}><FaArrowLeft /></button>
-                    <button className={styles.arrowButton} onClick={()=>SliderRef.current.slickNext()}><FaArrowRight /></button>
-                </div>
-                <CustomizeBorder></CustomizeBorder>
-            </div>
-            <div className='row'>
-                <Slider {...settings} ref={SliderRef}>
-                    {
-                        editorChoiceBlog.map(blog => <SmallCard key={blog.id} blog={blog}/>)
-                    }
-                </Slider>
-            </div>
+      <div className="container">
+        <div className="d-flex align-items-center justify-content-between position-relative mb-5">
+          <h4 className={styles.title}>Editors Choice</h4>
+          <div className="d-none d-md-flex align-items-center justify-content-center">
+            <button
+              className={`${styles.arrowButton} me-1`}
+              onClick={() => SliderRef.current.slickPrev()}
+            >
+              <FaArrowLeft />
+            </button>
+            <button
+              className={styles.arrowButton}
+              onClick={() => SliderRef.current.slickNext()}
+            >
+              <FaArrowRight />
+            </button>
+          </div>
+          <CustomizeBorder></CustomizeBorder>
         </div>
+        <div className="row">
+          <Slider {...settings} ref={SliderRef}>
+            {editorChoiceBlog.map((blog) => (
+              <SmallCard key={blog.id} blog={blog} />
+            ))}
+          </Slider>
+        </div>
+      </div>
     </div>
-  )
+  );
 }

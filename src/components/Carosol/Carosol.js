@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
-import styles from './Carosol.module.css';
-import Slider from 'react-slick';
-import BannerImg from '../BannerImg/BannerImg';
+import { useEffect, useState } from "react";
+import styles from "./Carosol.module.css";
+import Slider from "react-slick";
+import BannerImg from "../BannerImg/BannerImg";
 
 export default function Carosol() {
-    const [blogs, setBlogsData] = useState([]);
-    // const SliderRef = useRef(null);
+  const [blogs, setBlogsData] = useState([]);
+  
 
   useEffect(() => {
     const blogData = async () => {
@@ -25,32 +25,31 @@ export default function Carosol() {
       {
         breakpoint: 1200,
         settings: {
-            autoplay: true,
+          autoplay: true,
           slidesToShow: 2,
           infinite: true,
-          
-        }
+        },
       },
       {
         breakpoint: 570,
         settings: {
-            autoplay: true,
-            infinite: true,
+          autoplay: true,
+          infinite: true,
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
-//   const editorChoiceBlog = blogs.slice(1,blogs.length);
+  
   return (
-    <div className='my-5'>
-        <Slider {...settings}>
-                    {
-                        blogs.map(blog => <BannerImg key={blog.id} data={blog} imgHeight={570}/>)
-                    }
-        </Slider>
+    <div className="my-5">
+      <Slider {...settings}>
+        {blogs.map((blog) => (
+          <BannerImg key={blog.id} data={blog} imgHeight={570} />
+        ))}
+      </Slider>
     </div>
-  )
+  );
 }
