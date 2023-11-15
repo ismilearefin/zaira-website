@@ -41,7 +41,7 @@ export default function Home() {
             <RecentPosts />
             <TrendingNews />
           </div>
-          <aside className="col-12 col-xl-4">
+          <aside className="col-12 col-md-7  col-xl-4 mx-auto">
               <Subscribe />
               <HotCategories/>
               <PopularPosts/>
@@ -62,8 +62,10 @@ export default function Home() {
           <div className="col-12 col-xl-8">
             <BestNews></BestNews>
           </div>
-          <aside className="col-12 col-xl-4 ">
+          <aside className="col-12 col-md-7  col-xl-4 mx-auto">
+              <div className="text-center">
               <Image src={sidebarAd} alt="img" width={330} height={408} className="mb-5" />
+              </div>
               <PopularTech></PopularTech>
           </aside>
         </div>

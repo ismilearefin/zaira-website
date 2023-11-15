@@ -41,7 +41,7 @@ export default function CardThree({ blog }) {
           {blog?.title}
         </h4>
         <div
-          className={`${styles.infoDiv} d-flex d-lg-block d-xxl-flex align-items-center justify-content-start`}
+          className={`${styles.infoDiv} d-flex  d-xxl-flex align-items-center justify-content-start`}
         >
           <Link
             href="/"

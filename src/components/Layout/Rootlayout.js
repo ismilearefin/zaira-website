@@ -1,3 +1,4 @@
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 
 
@@ -6,7 +7,7 @@ export default function Rootlayout({children}) {
     <div className="position-relative">
         <Header></Header>
         {children}
-        <p>Footer</p>
+        <Footer/>
     </div>
   )
 }

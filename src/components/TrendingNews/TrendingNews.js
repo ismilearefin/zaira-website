@@ -31,7 +31,7 @@ export default function TrendingNews() {
         <div className='mb-4 mb-xxl-0'>
             <CardTwo blog={trendingBlog[0]} reverse={false} addDetails={true}/>
         </div>
-        <div className='row'>
+        <div className='row justify-content-center'>
           {
             secTrendingBlog.map(blog => <CardThree key={blog.id} blog={blog}/>)
           }
