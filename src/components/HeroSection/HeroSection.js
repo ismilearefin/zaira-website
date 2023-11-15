@@ -1,17 +1,12 @@
 'use client'
 import { useEffect, useState } from 'react';
-import { PiUserCircleLight } from 'react-icons/pi';
-import { AiOutlineCalendar } from 'react-icons/ai';
-import { RxCountdownTimer } from 'react-icons/rx';
 import styles from './HeroSection.module.css'
-import Image from 'next/legacy/image';
-import Link from 'next/link';
 import HeroCard from './HeroCard/HeroCard';
 import BannerImg from '../BannerImg/BannerImg';
 
 export default function HeroSection() {
     const [blogs, setBlogsData] = useState([]);
-    const [hoverEffect , setHoverEffect] = useState(false);
+    
 
   useEffect(() => {
     const blogData = async () => {

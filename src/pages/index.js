@@ -17,6 +17,14 @@ import PopularPosts from "@/components/PopularPosts/PopularPosts";
 import Carosol from "@/components/Carosol/Carosol";
 import BestNews from "@/components/BestNews/BestNews";
 import PopularTech from "@/components/PopularTech/PopularTech";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa";
+import Link from "next/link";
+import NewsLetter from "@/components/NewsLetter/NewsLetter";
 
 
 
@@ -60,6 +68,13 @@ export default function Home() {
           </aside>
         </div>
       </div>
+
+      {/* Newsletter */}
+      <div>
+        <NewsLetter/>
+      </div>
+
+
     </div>
   )
 }
