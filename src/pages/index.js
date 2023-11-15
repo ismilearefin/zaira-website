@@ -9,12 +9,14 @@ import EditorChoice from "@/components/EditorChoice/EditorChoice";
 import RecentPosts from "@/components/RecentPosts/RecentPosts";
 import TrendingNews from "@/components/TrendingNews/TrendingNews";
 import advertisement3 from '../assets/advertisement03.jpg';
+import sidebarAd from '../assets/sidebarAd.jpg';
 import Image from "next/image";
 import Subscribe from "@/components/Subscribe/Subscribe";
 import HotCategories from "@/components/HotCategories/HotCategories";
 import PopularPosts from "@/components/PopularPosts/PopularPosts";
 import Carosol from "@/components/Carosol/Carosol";
 import BestNews from "@/components/BestNews/BestNews";
+import PopularTech from "@/components/PopularTech/PopularTech";
 
 
 
@@ -52,8 +54,9 @@ export default function Home() {
           <div className="col-12 col-xl-8">
             <BestNews></BestNews>
           </div>
-          <aside className="col-12 col-xl-4">
-              2
+          <aside className="col-12 col-xl-4 ">
+              <Image src={sidebarAd} alt="img" width={330} height={408} className="mb-5" />
+              <PopularTech></PopularTech>
           </aside>
         </div>
       </div>

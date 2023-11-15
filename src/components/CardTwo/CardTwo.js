@@ -11,7 +11,7 @@ export default function CardTwo({blog,reverse, addDetails}) {
     const [hoverEffect , setHoverEffect] = useState(false);
   return (
     <div className='col-12'>
-        <div className={`row d-flex justify-content-between  ${reverse && 'align-items-center flex-row-reverse  mb-4'} `}>
+        <div className={`row d-flex justify-content-between mb-4 mb-xxl-0 ${reverse && 'align-items-center flex-row-reverse  '} `}>
             
         <div className='position-relative col-12 col-xxl-6 mb-4'
          onMouseOver={()=>setHoverEffect(true)} 

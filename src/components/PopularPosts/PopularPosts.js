@@ -17,7 +17,7 @@ export default function PopularPosts() {
   }, []);
   
   const secBlog = blogs.slice(1,5);
-  console.log(secBlog, 'popular')
+  
   return (
     <div className={styles.popularSection}>
         <h4>Popular Posts</h4>

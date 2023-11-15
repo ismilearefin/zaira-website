@@ -23,7 +23,7 @@ export default function BestNews() {
   return (
     <div className='position-relative'>
         <div className={styles.titleArea}>
-            <h4>Trending News</h4>
+            <h4>Weekly Best News</h4>
             <Button text={'View all'} link={'/'}/>
         </div>
         <CustomizeBorder/>
