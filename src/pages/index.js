@@ -1,4 +1,7 @@
 import Rootlayout from "@/components/Layout/Rootlayout";
+// react Slick Css file
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import styles from '../styles/Home.module.css';
 import HeroSection from "@/components/HeroSection/HeroSection";
 import AdBannerArea from "@/components/AdBannerArea/AdBannerArea";
@@ -9,6 +12,9 @@ import advertisement3 from '../assets/advertisement03.jpg';
 import Image from "next/image";
 import Subscribe from "@/components/Subscribe/Subscribe";
 import HotCategories from "@/components/HotCategories/HotCategories";
+import PopularPosts from "@/components/PopularPosts/PopularPosts";
+import Carosol from "@/components/Carosol/Carosol";
+import BestNews from "@/components/BestNews/BestNews";
 
 
 
@@ -19,15 +25,16 @@ export default function Home() {
       <AdBannerArea/>
       <EditorChoice/>
       {/* Trending Post Area */}
-      <div className={`${styles.trendingPostArea} container`}>
+      <div className={`${styles.PostArea} container`}>
         <div className="row">
-          <div className="col-12 col-lg-8">
+          <div className="col-12 col-xl-8">
             <RecentPosts />
             <TrendingNews />
           </div>
-          <aside className="col-12 col-lg-4">
+          <aside className="col-12 col-xl-4">
               <Subscribe />
               <HotCategories/>
+              <PopularPosts/>
           </aside>
         </div>
       </div>
@@ -36,8 +43,19 @@ export default function Home() {
           <Image src={advertisement3} alt="advertisement3" width={1290} height={200} className="img-fluid"/>
       </div>
       {/* carousel section */}
-      <div className="border">
-        Carosol
+      <div>
+        <Carosol></Carosol>
+      </div>
+      {/* Weekly Best News */}
+      <div className={`${styles.PostArea} container`}>
+        <div className="row">
+          <div className="col-12 col-xl-8">
+            <BestNews></BestNews>
+          </div>
+          <aside className="col-12 col-xl-4">
+              2
+          </aside>
+        </div>
       </div>
     </div>
   )

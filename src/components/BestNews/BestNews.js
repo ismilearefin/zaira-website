@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
 import Button from '../Button/Button';
 import CustomizeBorder from '../CustomizeBorder/CustomizeBorder';
-import styles from './TrendingNews.module.css';
+import styles from './BestNews.module.css';
 import CardTwo from '../CardTwo/CardTwo';
-import CardThree from '../CardThree/CardThree';
 
-export default function TrendingNews() {
+export default function BestNews() {
     const [trendingBlogs, setTrendingBlogs] = useState([]);
 
 
@@ -19,8 +18,8 @@ export default function TrendingNews() {
   }, []);
   
 
-  const trendingBlog = trendingBlogs.slice(0,1);
-  const secTrendingBlog = trendingBlogs.slice(1,4);
+  
+  const secTrendingBlog = trendingBlogs.slice(0,4);
   return (
     <div className='position-relative'>
         <div className={styles.titleArea}>
@@ -28,13 +27,10 @@ export default function TrendingNews() {
             <Button text={'View all'} link={'/'}/>
         </div>
         <CustomizeBorder/>
-        <div className='mb-4 mb-xxl-0'>
-            <CardTwo blog={trendingBlog[0]} reverse={false} addDetails={true}/>
-        </div>
-        <div className='row'>
-          {
-            secTrendingBlog.map(blog => <CardThree key={blog.id} blog={blog}/>)
-          }
+        <div className='mt-5'>
+            {
+                secTrendingBlog.map(blog => <CardTwo key={blog.id} blog={blog} reverse={true} addDetails={true}/>)
+            }
         </div>
     </div>
   )

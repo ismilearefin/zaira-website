@@ -3,9 +3,7 @@ import styles from './EditorChoice.module.css';
 import { FaArrowRight,FaArrowLeft } from "react-icons/fa";
 import SmallCard from '../SmallCard/SmallCard';
 import Slider from "react-slick";
-// react Slick Css file
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+
 import CustomizeBorder from '../CustomizeBorder/CustomizeBorder';
 
 

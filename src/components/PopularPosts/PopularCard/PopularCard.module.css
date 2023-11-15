@@ -1,0 +1,64 @@
+.categoryButton {
+    color: #6d757f;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #b8c1cd;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 4px 8px;
+    margin-bottom: 4px;
+    text-decoration: none;
+  }
+  
+  .categoryButton:hover {
+    background: #f4796c;
+    color: #fff;
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .contentBox > h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    line-height: 1.4;
+    color: #183354;
+  }
+  .info {
+    color: #6d757f;
+    font-size: clamp(10px, 10vw, 14px);
+    gap: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .infoDiv {
+    gap: 10px;
+  }
+  
+  .imageBox {
+    position: relative;
+    overflow: hidden;
+    /* min-width: 160px;
+      min-height: 140px; */
+  }
+  
+  .initialState {
+    text-decoration: none;
+  }
+  .hoverEffect {
+    text-decoration: underline;
+  }
+  
+  .image {
+    border-radius: 5px;
+    position: relative;
+    object-fit: cover;
+    transition: all 0.3s ease-out 0s;
+  }
+  .image:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out 0s;
+  }
+  

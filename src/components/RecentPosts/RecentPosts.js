@@ -31,13 +31,13 @@ export default function RecentPosts() {
         </div>
         <CustomizeBorder/>
         <div className='row'>
-            <div className='col-12 col-xl-6 mb-4 mb-xl-0'>
+            <div className='col-12 col-xxl-6 mb-4 mb-xxl-0'>
                 {
                     blogs.slice(4,5).map(blog => <BannerImg key={blog.id} data={blog} imgHeight={500}/>)
                 }
                 
             </div>
-            <div className='col-12 col-xl-6 d-flex flex-column'>
+            <div className='col-12 col-xxl-6 d-flex flex-column'>
                 {
                     secBlog.map(blog => <SmallCard key={blog.id} blog={blog} reverse={true}/>)
                 }
