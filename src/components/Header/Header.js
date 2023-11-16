@@ -344,19 +344,19 @@ export default function Header() {
                     {dropDown === "features" && (
                       <div className={styles.ResponsiveDropDown}>
                         <Link
-                          href="/"
+                          href="/features/feature1"
                           className={styles.responsiveDropdownButton}
                         >
                           features - 1
                         </Link>
                         <Link
-                          href="/"
+                          href="/features/feature2"
                           className={styles.responsiveDropdownButton}
                         >
                           features - 2
                         </Link>
                         <Link
-                          href="/"
+                          href="/features/feature3"
                           className={styles.responsiveDropdownButton}
                         >
                           features - 3
@@ -388,19 +388,19 @@ export default function Header() {
                         onMouseLeave={() => setDropDown(null)}
                       >
                         <Link
-                          href="/"
+                          href="/categories/blog1"
                           className={styles.responsiveDropdownButton}
                         >
                           Blog Layout - 1
                         </Link>
                         <Link
-                          href="/"
+                          href="/categories/blog2"
                           className={styles.responsiveDropdownButton}
                         >
                           Blog Layout - 2
                         </Link>
                         <Link
-                          href="/"
+                          href="/categories/blog3"
                           className={styles.responsiveDropdownButton}
                         >
                           Blog Layout - 3
