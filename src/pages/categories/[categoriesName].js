@@ -7,6 +7,7 @@ import Subscribe from "@/components/Subscribe/Subscribe";
 import SearchBox from "@/components/SearchBox/SearchBox";
 import { BiSearch } from "react-icons/bi";
 import RecentNews from "@/components/RecentNews/RecentNews";
+import SidebarNewsLetter from "@/components/SidebarNewsLetter/SidebarNewsLetter";
 
 
 
@@ -52,10 +53,9 @@ export default function CategoryPage() {
                 </form>
             </div>
             <HotCategories/>
-            <div className="mt-5">
             <Subscribe/>
-            </div>
             <RecentNews/>
+            <SidebarNewsLetter/>
           </aside>
         </div>
       </div>

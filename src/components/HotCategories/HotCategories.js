@@ -19,7 +19,7 @@ export default function HotCategories() {
   const list = hotCategoryList.slice(1, 5);
   return (
     <div className={styles.HotCategories}>
-      <h4>Subscribe & Followers</h4>
+      <h4>Hot Categories</h4>
       <CustomizeBorder />
       <div className="mt-5 row">
         {list.map((data) => (

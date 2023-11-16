@@ -11,6 +11,7 @@ import {
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 import styles from "./Subscribe.module.css";
+import SidebarNewsLetter from "../SidebarNewsLetter/SidebarNewsLetter";
 
 const SocialMediaLinks = [
   {
@@ -51,24 +52,10 @@ export default function Subscribe() {
       <h4>Subscribe & Followers</h4>
       <CustomizeBorder />
 
-      <div className={`position-relative my-5 row ${styles.socialicons}`}>
+      <div className={`position-relative mt-5  row ${styles.socialicons}`}>
         {SocialMediaLinks.map((link) => (
           <SocialMediaLink key={link.id} icon={link.icon} text={link.name} />
         ))}
-      </div>
-      <div className={styles.sidebarNewsLetter}>
-        <h4>Daily Newsletter</h4>
-        <p>Get all the top stories from Blogs to keep track.</p>
-        <form className="position-relative">
-          <input
-            type="email"
-            placeholder="Enter your e-mail"
-            className={styles.input}
-          />
-          <button className={styles.inputIcon}>
-            <MdOutlineArrowOutward />
-          </button>
-        </form>
       </div>
     </div>
   );

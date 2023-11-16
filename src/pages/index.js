@@ -18,6 +18,7 @@ import Carosol from "@/components/Carosol/Carosol";
 import BestNews from "@/components/BestNews/BestNews";
 import PopularTech from "@/components/PopularTech/PopularTech";
 import NewsLetter from "@/components/NewsLetter/NewsLetter";
+import SidebarNewsLetter from "@/components/SidebarNewsLetter/SidebarNewsLetter";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
           </div>
           <aside className="col-12 col-md-7  col-xl-4 mx-auto">
             <Subscribe />
+            <SidebarNewsLetter/>
             <HotCategories />
             <PopularPosts />
           </aside>
