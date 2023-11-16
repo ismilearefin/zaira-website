@@ -1,0 +1,61 @@
+.PostArea{
+    padding-top: 60px;
+}
+.paginationButton{
+    display: flex;
+    gap:10px;
+}
+.paginationButton>button{
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    /* border: none; */
+    color: black;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+   
+}
+.paginationButton>button:hover{
+    background-color: #F4796C;
+    border: none;
+    color: white;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.mobileSearch {
+    position: relative;
+  }
+  .mobileSearch > input {
+    border-radius: 10px;
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    /* padding: 10px 45px 10px 20px; */
+    padding: 30px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    height: 45px;
+    background-color: transparent;
+    color: #183354;
+  }
+  .mobileSearch > button {
+    padding: 8px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 15%;
+    font-size: 25px;
+    border: none;
+    right: 10px;
+    line-height: 1;
+    background-color: #f4796c;
+    color: white;
+  }
+  .mobileSearch > button:hover {
+    background-color: #183354;
+    transition: background-color 0.3s ease;
+  }

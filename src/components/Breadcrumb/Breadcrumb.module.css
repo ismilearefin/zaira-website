@@ -1,0 +1,27 @@
+.breadcrumbDiv{
+    background-color: #f9f9f7;
+    padding: 37px 0;
+}
+
+.breadcrumbLinks{
+    text-decoration: none;
+    padding-left: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+}
+
+.breadcrumbLinks:first-child::before {
+    content:'';
+}
+.breadcrumbLinks:last-child{
+    color: #f4796c;
+}
+
+.breadcrumbLinks::before{
+    text-decoration: none;
+    padding-right: 8px;
+    color: #6D757F;
+    content: ">>";
+    font-weight: 700;
+}

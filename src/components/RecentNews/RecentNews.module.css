@@ -1,0 +1,11 @@
+.main {
+    position: relative;
+    margin-bottom: 80px;
+  }
+.main > h4 {
+    font-size: 22px;
+    color: #183354;
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 1.75;
+  }

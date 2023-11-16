@@ -14,6 +14,7 @@ import styles from "./Header.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import SearchBox from "../SearchBox/SearchBox";
 
 export default function Header() {
   const [dropDown, setDropDown] = useState(null);
@@ -206,7 +207,7 @@ export default function Header() {
               )}
             </div>
 
-            <Link href="/" className="text-decoration-none">
+            <Link href="/about" className="text-decoration-none">
               About Us
             </Link>
             <div
@@ -223,9 +224,9 @@ export default function Header() {
                   onMouseOver={() => setDropDown("features")}
                   onMouseLeave={() => setDropDown(null)}
                 >
-                  <Link href="/">features - 1</Link>
-                  <Link href="/">features - 2</Link>
-                  <Link href="/">features - 3</Link>
+                  <Link href="/features/feature1">features - 1</Link>
+                  <Link href="/features/feature2">features - 2</Link>
+                  <Link href="/features/feature3">features - 3</Link>
                 </div>
               )}
             </div>
@@ -244,13 +245,13 @@ export default function Header() {
                   onMouseOver={() => setDropDown("categories")}
                   onMouseLeave={() => setDropDown(null)}
                 >
-                  <Link href="/">Blog Layout - 1</Link>
-                  <Link href="/">Blog Layout - 2</Link>
-                  <Link href="/">Blog Layout - 3</Link>
+                  <Link href="/categories/blog1">Blog Layout - 1</Link>
+                  <Link href="/categories/blog2">Blog Layout - 2</Link>
+                  <Link href="/categories/blog3">Blog Layout - 3</Link>
                 </div>
               )}
             </div>
-            <Link href="/" className="text-decoration-none">
+            <Link href="/contact" className="text-decoration-none">
               Contact
             </Link>
           </div>
@@ -272,13 +273,7 @@ export default function Header() {
                     <MdClose></MdClose>
                   </span>
                 </div>
-                <form className={styles.mobileSearch}>
-                  <input type="search" placeholder="Search here ..." />
-                  <button type="submit">
-                    <BiSearch />
-                  </button>
-                </form>
-
+                <SearchBox/>
                 <div className="d-flex flex-column mt-3 border-top">
                   <div className={`${styles.drawerButton}`}>
                     <div className="d-flex justify-content-between align-items-center">

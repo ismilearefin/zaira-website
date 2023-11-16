@@ -162,32 +162,7 @@
   font-size: 30px;
 }
 
-.mobileSearch {
-  position: relative;
-}
-.mobileSearch > input {
-  outline: none;
-  display: block;
-  width: 100%;
-  border: 1px solid #d9d9d9;
-  padding: 10px 45px 10px 20px;
-  font-size: 14px;
-  font-weight: 400;
-  height: 45px;
-  background-color: transparent;
-  color: #183354;
-}
-.mobileSearch > button {
-  position: absolute;
-  top: 20%;
-  font-size: 22px;
-  border: none;
-  padding: 0;
-  right: 20px;
-  line-height: 1;
-  background-color: transparent;
-  color: #183354;
-}
+
 .drawerButton {
   position: relative;
   width: 100%;
@@ -294,6 +269,7 @@
   .isSticky {
     padding: 5px 0;
   }
+  
 }
 @-webkit-keyframes slide-top {
   0% {

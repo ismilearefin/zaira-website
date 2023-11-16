@@ -69,7 +69,7 @@ export default function CardTwo({ blog, reverse, addDetails }) {
           </div>
           {addDetails && (
             <div className="my-2">
-              <p className={styles.detailsText}>{blog?.details}</p>
+              <p className={styles.detailsText}>{blog?.details && blog?.details.length < 279 ? blog?.details : (blog?.details.slice(0,280) + '...')}</p>
             </div>
           )}
           <Button text={"read more"} link={"/"} />
