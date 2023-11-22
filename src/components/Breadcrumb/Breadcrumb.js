@@ -5,7 +5,10 @@ import Link from "next/link";
 export default function Breadcrumb() {
   const router = useRouter();
 
-  const crumbs = [router.asPath].filter((crumb) => crumb !== "");
+  
+  const paths = [router.asPath].filter((crumb) => crumb !== "");
+  const crumbs = paths[0].split("/").filter((crumb) => crumb !== "");
+  const routeNames = crumbs.map((crumb) => decodeURIComponent(crumb));
 
   return (
     <div className={styles.breadcrumbDiv}>
@@ -18,13 +21,13 @@ export default function Breadcrumb() {
             Home
           </Link>
 
-          {crumbs.map((crumbs) => (
+          {routeNames.map((crumbs) => (
             <Link
               key={crumbs}
               href={`${crumbs}`}
               className={`${styles.breadcrumbLinks}`}
             >
-              Blogs
+             {crumbs}
             </Link>
           ))}
         </nav>

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import styles from "./Carosol.module.css";
 import Slider from "react-slick";
 import BannerImg from "../BannerImg/BannerImg";
 
